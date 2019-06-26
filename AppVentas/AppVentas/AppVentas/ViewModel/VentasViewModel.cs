@@ -20,7 +20,7 @@ namespace AppVentas.ViewModel
             }
         }
 
-        public static void Inicializador(String filename) //CAMBIAR NOMBRE DEL FILENAME PARA RECIBIR LA VISTA DE LA APP
+        public static void Inicializador(String filename) 
         {
             if (filename == null) { throw new ArgumentException(); }
             if (instance != null) { instance.conec.Close(); }
@@ -46,7 +46,7 @@ namespace AppVentas.ViewModel
                     Cantidad = cantidad,
                     Fecha = fecha
                 });
-                EstadoMensaje = string.Format("Se ingresó corretamente"); //MENSAJE DE QUE SE INGRESO POR LA VISTA DE LA APP
+                EstadoMensaje = string.Format("Se ingresó corretamente"); 
             }
             catch (Exception e)
             {
@@ -72,3 +72,4 @@ namespace AppVentas.ViewModel
 
     }
 }
+
